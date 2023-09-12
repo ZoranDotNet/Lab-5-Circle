@@ -12,7 +12,7 @@
 
         public double GetArea(int radius)  //method - calculate area of circle
         {
-            double area = (radius * radius) * Pi;
+            double area = Math.Pow(radius, 2) * Pi;
             return Math.Round(area, 2);
         }
 
@@ -23,12 +23,12 @@
         }
         public double GetSphereArea(int radius)  // method - calculate area of sphere
         {
-            double area = 4 * Pi * (radius * radius);
+            double area = 4 * Pi * Math.Pow(Radius, 2);
             return Math.Round(area, 2);
         }
         public double GetSphereVolume(double radius)
         {
-            double volume = (4 * Pi) * (radius * radius * radius) / 3;
+            double volume = (4 * Pi) * Math.Pow(radius, 3) / 3;
             return Math.Round(volume, 2);
         }
 
@@ -48,8 +48,7 @@
 
         public double GetArea(double triangleBase, double triangleHeight)  //method - calculate area of triangle
         {
-            double area = triangleBase * triangleHeight / 2;
-            return area;
+            return triangleBase * triangleHeight / 2;
         }
 
     }
@@ -67,11 +66,11 @@
             Console.WriteLine("Radius of circle2 is: " + circle2.Radius);
             Console.WriteLine("Triangle has a base of " + triangle.Base + " and a height of " + triangle.Height);
             Console.WriteLine();
-            Console.WriteLine("Area of a circle1 is: " + circle1.GetArea(circle1.Radius) + "cm²");
-            Console.WriteLine("Area of a circle2 is: " + circle2.GetArea(circle2.Radius) + "cm²");
+            Console.WriteLine("Area of circle1 is: " + circle1.GetArea(circle1.Radius) + "cm²");
+            Console.WriteLine("Area of circle2 is: " + circle2.GetArea(circle2.Radius) + "cm²");
             Console.WriteLine();
-            Console.WriteLine("The circumference of a circle1 is: " + circle1.GetCircumference(circle1.Radius) + "cm.");
-            Console.WriteLine("The circumference of a circle2 is: " + circle2.GetCircumference(circle2.Radius) + "cm.");
+            Console.WriteLine("The circumference of circle1 is: " + circle1.GetCircumference(circle1.Radius) + "cm.");
+            Console.WriteLine("The circumference of circle2 is: " + circle2.GetCircumference(circle2.Radius) + "cm.");
             Console.WriteLine();
             Console.WriteLine("Surface area of a sphere with radius 6cm is: " + circle2.GetSphereArea(circle2.Radius) + " cm²");
             Console.WriteLine("Volume of a sphere with radius 6cm is: " + circle2.GetSphereVolume(circle2.Radius) + "cm³");

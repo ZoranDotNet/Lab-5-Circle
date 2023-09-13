@@ -5,6 +5,7 @@
         public const float Pi = 3.141f;
         public int Radius { get; set; }
 
+
         public Circle(int radius)  //constructor
         {
             Radius = radius;
@@ -26,7 +27,7 @@
             double area = 4 * Pi * Math.Pow(Radius, 2);
             return Math.Round(area, 2);
         }
-        public double GetSphereVolume(double radius)
+        public double GetSphereVolume(double radius)  // method - calculate volume of spher
         {
             double volume = (4 * Pi) * Math.Pow(radius, 3) / 3;
             return Math.Round(volume, 2);

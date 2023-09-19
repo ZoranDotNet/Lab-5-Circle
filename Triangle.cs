@@ -20,7 +20,8 @@
         {
             double hypotenuse = 0;
             hypotenuse = Math.Sqrt(Math.Pow(tBase, 2) + Math.Pow(tHeight, 2));
-            return hypotenuse + tBase + tHeight;
+            double circumference = hypotenuse + tBase + tHeight;
+            return Math.Round(circumference, 2);
         }
 
     }

@@ -8,7 +8,7 @@
 
             Circle circle1 = new(5);       //instantiate object 
             Circle circle2 = new(6);
-            Triangle triangle = new(3, 4);
+            Triangle triangle = new(5, 6);
 
 
             // Call our methods

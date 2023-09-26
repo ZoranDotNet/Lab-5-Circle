@@ -1,6 +1,6 @@
 ﻿namespace Circle
 {
-    class Triangle //private class Triangle
+    class Triangle
     {
         public double Base { get; set; } //Properties
         public double Height { get; set; }
@@ -10,12 +10,12 @@
             Base = triangleBase;
             Height = triangleHeight;
         }
-
-        public double GetArea(double tBase, double tHeight)  //Method - calculate area of triangle
+        //METHOD - Calculate area of triangle
+        public double GetArea(double tBase, double tHeight)
         {
             return tBase * tHeight / 2;
         }
-
+        //METHOD - Calculate the circumference 
         public double GetCircumference(double tBase, double tHeight)
         {
             double hypotenuse = 0;

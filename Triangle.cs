@@ -2,20 +2,24 @@
 {
     class Triangle //private class Triangle
     {
-        public double Base { get; set; } //Properties
+        // Properties
+        public double Base { get; set; }
         public double Height { get; set; }
 
-        public Triangle(double triangleBase, double triangleHeight) // Constructor (since base is a keyword i named it a little bit different)
+        // Constructor
+        public Triangle(double triangleBase, double triangleHeight)
         {
             Base = triangleBase;
             Height = triangleHeight;
         }
 
-        public double GetArea(double tBase, double tHeight)  //Method - calculate area of triangle
+        // Method - calculate area of triangle
+        public double GetArea(double tBase, double tHeight)
         {
             return tBase * tHeight / 2;
         }
 
+        // Method - calculate circumference of a right triangle
         public double GetCircumference(double tBase, double tHeight)
         {
             double hypotenuse = 0;

@@ -11,9 +11,6 @@
             Triangle t = new(5, 6);
 
 
-            c1.GetArea(5);
-
-
             // Call our methods
             Console.WriteLine($"Radius of circle1 is: {c1.Radius}cm");
             Console.WriteLine($"Radius of circle2 is: {c2.Radius}cm");

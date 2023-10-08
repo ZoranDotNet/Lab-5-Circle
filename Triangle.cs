@@ -15,9 +15,6 @@
 
 
         // Method - calculate area of triangle
-
-        //METHOD - Calculate area of triangle
-
         public double GetArea(double tBase, double tHeight)
         {
             return tBase * tHeight / 2;
